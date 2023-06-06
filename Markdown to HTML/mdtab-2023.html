@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD></HEAD>
+<BODY>
+<P>
+I have made a DFA (flowchart) for the program, please view it at:
+<A HREF = "https://miro.com/app/board/uXjVPsbtsy0=/?share_link_id=465739780267">https://miro.com/app/board/uXjVPsbtsy0=/?share_link_id=465739780267</A>
+
+</P>
+<P>
+Design decisions:
+<UL><LI> lists can not be inside any tag</LI><LI> b and i (*, **) if present, have to be present outside the underline (convention)</LI><LI> header can not be inside b, i, u tags, but the reverse can be done</LI><LI> direct links and links with address and name specified have been implemented, along with b, i, u, headings</LI><LI> nested lists (both ordered and unordered) have been implemented</LI><LI> nested blockquotes have been implemented</LI><LI> escape sequences for special characters has been implemented</LI><LI> nesting is based on amount of indentation provided in lists</LI><LI> nesting in blockquotes is based on number of > characters, starting from newline only</LI><LI> hardwrapped lines of list elements ms=ust be indented with atleast one space</LI><LI> inline tags, and asterisks for b and i must end, otherwise error is produced.</LI><LI> list elements may be separated by newline characters and spaces/tabs</OL></UL>
+</LI>
+
+
+<BLOCKQUOTE>
+Since this is a markdown to HTML converter, if an error occurs, I have output only the error text as output in the HTML file
+as this will give the exact error description
+</BLOCKQUOTE>
+Errors pinpointed are:
+<UL><LI> Asterisks for bold/italics not closed</LI><LI> inline tags not closed</LI><LI> link angle bracket not closed</LI><LI> incorrect syntax of [a](b) links</LI><LI> (b) missing in [a](b) links</LI><LI> table syntax incorrect.</OL></UL>
+</LI>
+
+</P>
+</BODY>
+</HTML> 
